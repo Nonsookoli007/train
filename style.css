@@ -1,17 +1,28 @@
 body{
-  /* font-family: Arial, Helvetica, sans-serif ; */
   font-family: Georgia, 'Times New Roman', Times, serif ;
   background-image: url(./img/sky-clouds-cinematic-clouds-wallpaper-5.jpg);
   text-align: center;
+  height: 100vh;
+
+  overflow: hidden;
+  background-position: center;
   background-size: cover;
 }
 
 .container{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;   
+  transform: translate(-50%, -50%);
+ 
   max-width: 400px;
-  margin: 0 auto;
   padding: 20px;
   background-color: #fff;
-  border-radius: 5px;
+
+  border-radius: 20px;
+
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -51,3 +62,19 @@ api kley{
   111e52c038fb6d0465724e9369a37adf
 
    */
+
+   @media (max-width : 468px) {
+    body{
+      overflow: hidden;
+      background-size: cover;
+    }
+
+  .container{
+      border-radius: 20px;
+      max-width: 300px;
+      
+  }
+
+}
+    
+  
